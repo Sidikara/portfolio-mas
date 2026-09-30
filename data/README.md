@@ -1,28 +1,9 @@
-# Folder Data
+## Penggunaan
 
-Berkas CSV harga tidak disertakan di repositori ini, dan diabaikan oleh
-`.gitignore`.
+Data harga sudah disertakan di folder `data/`, jadi langsung bisa dijalankan:
 
-## Cara mendapatkan data
-
-```bash
-python fetch_data.py --days 730
-```
-
-Berkas hasil unduhan akan tersimpan di folder ini sebagai
-`prices_730.csv`.
-
-## Format yang diharapkan
-
-Bila ingin memakai data sendiri, susun CSV dengan format berikut lalu
-letakkan di folder ini:
-
-```
-Tanggal,BTC,ETH
-2024-09-29,65602.01,2657.62
-2024-09-30,63327.59,2602.23
-```
-
+    streamlit run app.py
+    
 Aturannya:
 
 - Kolom pertama bernama `Tanggal` atau `Date`, format `YYYY-MM-DD`
